@@ -64,3 +64,46 @@ const typed = new Typed('.multiple-text',{
     backDelay: 1000,
     loop: true
 })
+
+// ==================== EMAILJS ====================
+
+emailjs.init("tt79DFCokVTLmC-Al");
+
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_9rvu6it",
+        "template_ge82n9q",
+        this
+    )
+    .then(function () {
+
+            // Auto Reply
+        emailjs.send(
+            "service_9rvu6it",
+            "template_no610ct",
+            {
+                from_name: contactForm.from_name.value,
+                from_email: contactForm.from_email.value,
+                phone: contactForm.phone.value,
+                subject: contactForm.subject.value,
+                message: contactForm.message.value
+            }
+        );
+
+        alert("Message sent successfully, thankyou!");
+
+        contactForm.reset();
+
+    })
+    .catch(function (error) {
+
+        console.error("EmailJS Error:", error);
+
+        alert("Failed to send message, unfortunately!");
+
+    });
+});
