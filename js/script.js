@@ -7,6 +7,17 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
+/*==================== Light-mode ====================*/
+
+let lightMode = document.querySelector('#light-mode');
+
+lightMode.onclick = () => {
+    document.body.classList.toggle('light-mode');
+
+    lightMode.classList.toggle('bx-sun');
+    lightMode.classList.toggle('bx-moon');
+};
+
 /*==================== scroll sections active link ====================*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -107,3 +118,5 @@ contactForm.addEventListener("submit", function (e) {
 
     });
 });
+
+
