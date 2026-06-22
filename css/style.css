@@ -79,6 +79,11 @@ section {
     cursor: pointer;
 }
 
+#light-mode:hover{
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
 
 /* -----------------------HOME SECTION ------------------------------*/
 .home {
