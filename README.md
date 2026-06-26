@@ -1,4 +1,4 @@
-MY_PORTFOLIO
+MY\_PORTFOLIO
 
 Welcome to my personal portfolio website.
 
@@ -26,7 +26,7 @@ Technologies Used
 * JavaScript
 * ScrollReveal.js
 * Typed.js
-* Git & GitHub
+* Git \& GitHub
 
 
 
@@ -48,14 +48,17 @@ Author
 Steven Jean
 
 Computer Engineer
+
 Web Developer
+
 IT Support Technician
 
 
 
 Portfolio Website:
 
-https://jstinfo.github.io/MY_PORTFOLIO
+https://jstinfo.tech
+
 
 
 Contact
@@ -64,9 +67,10 @@ Email: jeansteven043@gmail.com
 
 GitHub: https://github.com/JSTINFO
 
-LinkedIn: Soon
+LinkedIn:https://www.linkedin.com/in/jstinfo/
 
 Phone: (+509) 4766-7454/3332-7894
+
 
 
 License
